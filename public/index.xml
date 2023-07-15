@@ -6,7 +6,18 @@
     <description>Recent content on bhavin t</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Jul 2023 14:24:07 +0100</lastBuildDate><atom:link href="https://bhavin-t.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 14:45:07 +0100</lastBuildDate><atom:link href="https://bhavin-t.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux from scratch</title>
+      <link>https://bhavin-t.github.io/projects/lfs/</link>
+      <pubDate>Sat, 15 Jul 2023 14:23:47 +0100</pubDate>
+      
+      <guid>https://bhavin-t.github.io/projects/lfs/</guid>
+      <description>✨ intro Link to heading linux from scratch (LFS) has been on my radar for a very long time, and so at least 15 years after i first discovered it &amp;ndash; i&amp;rsquo;m giving it a go!
+for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&amp;rsquo;ll start with a functioning linux system,
+😕 y tho Link to heading prior to this project the most involved linux install i ran through was arch linux in about 2008.</description>
+    </item>
+    
     <item>
       <title>about me</title>
       <link>https://bhavin-t.github.io/about/</link>

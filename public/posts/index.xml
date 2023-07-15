@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>posts on bhavin t</title>
+    <link>https://bhavin-t.github.io/posts/</link>
+    <description>Recent content in posts on bhavin t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Jul 2023 14:45:07 +0100</lastBuildDate><atom:link href="https://bhavin-t.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

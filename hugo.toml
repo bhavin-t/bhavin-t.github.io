@@ -161,14 +161,14 @@ url = "https://www.linkedin.com/in/bhavin-t-55370839/"
 # type = "application/rss+xml"
 
 [[menu.main]]
-  name = "About"
+  name = "about"
   weight = 1
   url = "about/"
 [[menu.main]]
-  name = "Blog"
+  name = "blog"
   weight = 2
   url  = "posts/"
 [[menu.main]]
-  name = "Projects"
+  name = "projects"
   weight = 3
   url  = "projects/"

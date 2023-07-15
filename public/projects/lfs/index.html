@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  linux from scratch · bhavin t
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="bhavin t">
+<meta name="description" content="✨ intro Link to heading linux from scratch (LFS) has been on my radar for a very long time, and so at least 15 years after i first discovered it &ndash; i&rsquo;m giving it a go!
+for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&rsquo;ll start with a functioning linux system,
+😕 y tho Link to heading prior to this project the most involved linux install i ran through was arch linux in about 2008.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="linux from scratch"/>
+<meta name="twitter:description" content="✨ intro Link to heading linux from scratch (LFS) has been on my radar for a very long time, and so at least 15 years after i first discovered it &ndash; i&rsquo;m giving it a go!
+for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&rsquo;ll start with a functioning linux system,
+😕 y tho Link to heading prior to this project the most involved linux install i ran through was arch linux in about 2008."/>
+
+<meta property="og:title" content="linux from scratch" />
+<meta property="og:description" content="✨ intro Link to heading linux from scratch (LFS) has been on my radar for a very long time, and so at least 15 years after i first discovered it &ndash; i&rsquo;m giving it a go!
+for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&rsquo;ll start with a functioning linux system,
+😕 y tho Link to heading prior to this project the most involved linux install i ran through was arch linux in about 2008." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bhavin-t.github.io/projects/lfs/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-07-15T14:23:47+01:00" />
+<meta property="article:modified_time" content="2023-07-15T14:23:47+01:00" />
+
+
+
+
+<link rel="canonical" href="https://bhavin-t.github.io/projects/lfs/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      bhavin t
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">about</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://bhavin-t.github.io/projects/lfs/">
+          linux from scratch
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="-intro">
+  ✨ intro
+  <a class="heading-link" href="#-intro">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><a href="https://www.linuxfromscratch.org/"  class="external-link" target="_blank" rel="noopener">linux from scratch (LFS)</a> has been on my radar for a very long time, and so at least 15 years after i first discovered it &ndash; i&rsquo;m giving it a go!</p>
+<p>for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&rsquo;ll start with a functioning linux system,</p>
+<hr>
+<h2 id="-y-tho">
+  😕 y tho
+  <a class="heading-link" href="#-y-tho">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://i.kym-cdn.com/photos/images/newsfeed/001/255/097/022.jpg" alt="y tho"></p>
+<p>prior to this project the most involved linux install i ran through was arch linux in about 2008. i learnt more about linux from this install than i have during any other project i&rsquo;ve undertaken<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>so! my main goal for this project is to fill out my knowledge of linux EVEN MORE. i&rsquo;m certainly not expecting to be able to roll a whole distro unassisted by the end of the project &ndash; far from it &ndash; but i do want to at least be able to know and understand all of the steps involved.</p>
+<hr>
+<h2 id="-complications">
+  ⚠️ complications
+  <a class="heading-link" href="#-complications">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>this project will be built on an m1 pro macbook pro. this poses an issue because the lfs book targets <code>x86</code>/<code>x86_64</code> architectures <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, rather than the <code>arm64</code> architecture that apple silicon is based on.</p>
+<p>to that end &ndash; i found the excellent <a href="https://philsyme.net/lfs-tw/"  class="external-link" target="_blank" rel="noopener">Linux From Scratch with Training Wheels</a> which provides supplemental steps to enable lfs to be built for apple silicon 🙏</p>
+<hr>
+<h2 id="-the-posts">
+  ✨ the posts
+  <a class="heading-link" href="#-the-posts">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>with all of that said, here are my posts outlining my progress/thoughts of the process!:</p>
+<ol>
+<li>coming soon!</li>
+<li>???</li>
+</ol>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>i should be abundantly clear though: i hated the whole process. it took AT LEAST 5 failed attempts before i actually completed it successfully, and those attempts had to be spaced out so i didn&rsquo;t yeet my laptop out of the window.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.linuxfromscratch.org/lfs/view/stable/prologue/architecture.html"  class="external-link" target="_blank" rel="noopener">https://www.linuxfromscratch.org/lfs/view/stable/prologue/architecture.html</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     bhavin t 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

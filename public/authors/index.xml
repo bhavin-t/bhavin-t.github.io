@@ -5,6 +5,16 @@
     <link>https://bhavin-t.github.io/authors/</link>
     <description>Recent content in Authors on bhavin t</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://bhavin-t.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Jul 2023 14:45:07 +0100</lastBuildDate><atom:link href="https://bhavin-t.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bhavin</title>
+      <link>https://bhavin-t.github.io/authors/bhavin/</link>
+      <pubDate>Sat, 15 Jul 2023 14:45:07 +0100</pubDate>
+      
+      <guid>https://bhavin-t.github.io/authors/bhavin/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

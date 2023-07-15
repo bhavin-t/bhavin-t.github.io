@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bhavin on bhavin t</title>
+    <link>https://bhavin-t.github.io/authors/bhavin/</link>
+    <description>Recent content in bhavin on bhavin t</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Jul 2023 14:45:07 +0100</lastBuildDate><atom:link href="https://bhavin-t.github.io/authors/bhavin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>posts</title>
+      <link>https://bhavin-t.github.io/posts/</link>
+      <pubDate>Sat, 15 Jul 2023 14:45:07 +0100</pubDate>
+      
+      <guid>https://bhavin-t.github.io/posts/</guid>
+      <description>a list of all of my currently published blog posts</description>
+    </item>
+    
+  </channel>
+</rss>
