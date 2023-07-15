@@ -14,8 +14,7 @@
       
       <guid>https://bhavin-t.github.io/projects/lfs/</guid>
       <description>✨ intro Link to heading linux from scratch (LFS) has been on my radar for a very long time, and so at least 15 years after i first discovered it &amp;ndash; i&amp;rsquo;m giving it a go!
-for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&amp;rsquo;ll start with a functioning linux system,
-😕 y tho Link to heading prior to this project the most involved linux install i ran through was arch linux in about 2008.</description>
+for the uninitiated, linux from scratch is a step-by-step tutorial for building a linux distribution, entirely from source. i&amp;rsquo;ll start with a functioning linux system, and mount a secondary drive to it, on which i&amp;rsquo;ll format, partition, and bootstrap the actual lfs distribution.</description>
     </item>
     
     <item>
